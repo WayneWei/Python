@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import requests
 import sys
 from BeautifulSoup import BeautifulSoup
@@ -18,4 +21,4 @@ table = soup('table')[5]
 
 tag = table.findAll('tr')[4].findAll('td')[2].b.string
 
-print tag
+print "日經指數 " + tag
